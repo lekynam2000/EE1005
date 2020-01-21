@@ -17,7 +17,7 @@
     program is being executed.
 (b) Use a compiler to translate the source program into machine language. This produces an object file if there are no syntax errors. If there are errors, we need to go back to the editor to fix these errors. Use a linker to link this object file with other necessary components (i.e. libraries) to get a stand-alone executable file.
 (c) If there is .exe file, the source file should be kept for further developments. But we do not have to keep .o file because people do not fix the .o file and the .o file is not useful when there is .exe file.
-3. 
+3.
 (a) let max = a. 
 compare max and b: 
 if b>max then set max=b
@@ -25,7 +25,7 @@ else keep max
 compare max and c: 
 if c>max then set max=c
 else keep max
-return max
+OUTPUT max
 
 (b) let min = a. 
 compare min and b: 
@@ -34,20 +34,20 @@ else keep min
 compare min and c: 
 if c>min then set min=c
 else keep min
-return min
+OUTPUT min
 
 (c) let max = a
 compare max with b,c,d.
 set max equal new value if that value larger than max
-return max
+OUTPUT max
 Similar with min
 This is satisfactory for more numbers
 
 (d) 
-if(a=0 and b=0 and c=0) return infinity root
-if(a=0 and b=0) return no root
-if(a=0) return -c/b
+if(a=0 and b=0 and c=0) OUTPUT "infinity root"
+if(a=0 and b=0) OUTPUT no root
+if(a=0) OUTPUT -c/b
 d = b*b - 4*a*c
-if(d<0) return no root
-if(d=0) return -b/2a
-if(d>0) return (-b+sqrt(d))/2a and (-b-sqrt(d))/2a  
+if(d<0) OUTPUT "complex root"
+if(d=0) OUTPUT -b/2a
+if(d>0) OUTPUT (-b+sqrt(d))/2a and (-b-sqrt(d))/2a  
